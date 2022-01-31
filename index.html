@@ -38,41 +38,45 @@
                 <h1>Let's do this!</h1>
 
 
-                <form action="" id='form'>
+                <form action="" id='formform'>
 
                 <div class='formDiv'>
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" name='firstName' class="input">
+                    <input type="text" name='firstName' class="input" required >
                 </div>
 
                 <div class='formDiv'>
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" name='lastName' class="input">
+                    <input type="text" name='lastName' class="input" required > 
                 </div>    
 
                 <div class='formDiv'>
                     <label for="email">EMAIL</label>
-                    <input type="email" name='email' class="input">
+                    <input type="email" name='email' class="input" required>
                 </div>
 
                 <div class='formDiv'>
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="number" name='phoneNumber' class="input">
+                    <input type="tel" name='phoneNumber' class="input" required>
                 </div>
 
                 <div class='formDiv'>
                     <label for="password">PASSWORD</label>
-                    <input type="password" name='password' class="input">
+                    <input type="password" name='password' class="input" required>
                 </div>
 
                 <div class='formDiv'>
                     <label for="cPassword">CONFIRM PASSWORD</label>
-                    <input type="password" name='cPassword' class="input">
+                    <input type="password" name='cPassword' class="input" required>
                 </div>
-
+                        
                 </form>
             </div>
-            <div id='submit'></div>
+            <div id='submit'>
+                <button  type="submit" class="btn" form='formform'>Create Account</button>
+                <p>Already have an account?<a id='logIn' href="">Log in</a> </p>
+                
+            </div>
         </div>
     </div>
     
